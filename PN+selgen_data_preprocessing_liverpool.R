@@ -379,6 +379,7 @@
       write.csv(f1_train,file=paste("results/training_set",i,".csv",sep="_"))
       write.csv(f1_sars2,file=paste("results/sars_set",i,".csv",sep="_"))
       write.csv(f1_test,file=paste("results/test_set",i,".csv",sep="_"))
+      print(i)
    
   }
 
