@@ -1,5 +1,4 @@
   library(plyr)
-  library(h2o) # https://www.h2o.ai/products/h2o/
   library(dplyr)
   library(reshape2)
   library(ape)
@@ -8,7 +7,6 @@
   `%not in%` <- function (x, table) is.na(match(x, table, nomatch=NA_integer_))
   
   # Start h2o JVM
-  localh20<-h2o.init(nthreads = -1)  # Start a local H2O cluster using nthreads = num available cores
   
   # Read data from file
   f1<-read.csv(file="liverpool_features_genus.csv",header=T)
