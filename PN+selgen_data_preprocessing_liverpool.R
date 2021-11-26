@@ -378,6 +378,9 @@
       write.csv(f1_sars2,file=paste("results/sars_set",i,".csv",sep="_"))
       write.csv(f1_test,file=paste("results/test_set",i,".csv",sep="_"))
       print(i)
+      system("git add .",intern=F)
+      system("git commit",intern=F)
+      system("git push https://adithyamadhusoodanan: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@github.com/adithyamadhusoodanan/COVWORKCOD.git",intern=F)
    
   }
 
