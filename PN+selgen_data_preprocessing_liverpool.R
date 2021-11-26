@@ -1,12 +1,3 @@
-  
-install.packages('plyr')
-install.packages('h2o')
-install.packages('dplyr')
-install.packages('reshape2')
-install.packages('ape')
-install.packages('seqinr')
-install.packages('matrixStats')
-
   library(plyr)
   library(h2o) # https://www.h2o.ai/products/h2o/
   library(dplyr)
