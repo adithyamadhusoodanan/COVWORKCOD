@@ -103,7 +103,6 @@
   # test.record<-matrix(nrow=ntest,ncol=nloops)
   nfeatures<-length(gen.feats)+ntax
   vimps<-matrix(nrow=nfeatures,ncol=nloops)
-  i=13
   for (i in 1:nloops) {
       # Stratified random sampling
       trains<-f_st3[f_st3$virus!=uni_val[i],]
