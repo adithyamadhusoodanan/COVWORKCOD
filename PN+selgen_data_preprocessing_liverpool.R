@@ -377,9 +377,9 @@
       f1_sars2=f1_sars2[-1,]
       f1_sars2[is.na(f1_sars2)]=0
    
-      write.csv(f1_train,file=paste("training_set",i,".csv",sep="_"))
-      write.csv(f1_sars2,file=paste("sars_set",i,".csv",sep="_"))
-      write.csv(f1_test,file=paste("test_set",i,".csv",sep="_"))
+      write.csv(f1_train,file=paste("results/training_set",i,".csv",sep="_"))
+      write.csv(f1_sars2,file=paste("results/sars_set",i,".csv",sep="_"))
+      write.csv(f1_test,file=paste("results/test_set",i,".csv",sep="_"))
    
   }
 
