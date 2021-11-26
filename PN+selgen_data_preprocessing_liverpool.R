@@ -1,13 +1,3 @@
-"""
-Babayan, Orton & Streicker
-Predicting Reservoir Hosts and Arthropod Vectors from Evolutionary Signatures in RNA Virus Genomes
--- Reservoir host prediction from selected genomic features and phylogenetic neighborhoods
-"""
-
-rm(list=ls())
-#setwd("COVID-Reservoir-Prediciton") # Set local working directory where files are located
-#setwd("~/GoogleDrive/Boulot/With Alain Zemkoho_machine learning/prediction of reservoirs/reservoir-prediction-scripts-data/merged_new.csv")
-
   library(plyr)
   library(h2o) # https://www.h2o.ai/products/h2o/
   library(dplyr)
