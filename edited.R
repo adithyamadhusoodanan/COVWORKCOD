@@ -1,7 +1,4 @@
-setwd("~/Desktop/COVID-Reservoir-Prediciton/liverpool dataset experiments")
-
-rm(list=ls())
-setwd("") # Set local working directory where files are located
+# Set local working directory where files are located
 
 library(plyr)
 library(h2o) # https://www.h2o.ai/products/h2o/
@@ -48,7 +45,7 @@ nloops<-length(uni_val)
 uvimps <-matrix(nrow=length(f_st3)-10, ncol=nloops) # create a m by n matrix where n number of rows (nloops) and m columns (number of features)
 # -8 because two features are constant and will be dropped
 
-for (i in 1:nloops){
+for (i in 1:3){
   #trains <-f_st3 %>% group_by(response) %>%  # create the training set from 70% of total data
   #filter(Genbank.accession %in% sample(unique(Genbank.accession), ceiling(s*length(unique(Genbank.accession)))))
   trains<-f_st3[f_st3$virus!=uni_val[i],]
